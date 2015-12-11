@@ -19,7 +19,7 @@ class Exercice1 {
         for (int i=1; i<=n; i++) {
             if(cp*cp == i) {
                 System.out.println(i);
-            };
+            }
         };     
         System.out.println("Voici les n premiers entiers strictement positifs impairs:");
         for (int i=1; i<=n; i++) {

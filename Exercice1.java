@@ -15,12 +15,9 @@ class Exercice1 {
             System.out.println(i);
         };
         System.out.println("Voici les n premiers carrés parfaits:");
-        int cp = (int) Math.sqrt(n);
-        for (int i=1; i<=n; i++) {
-            if(cp*cp == i) {
-                System.out.println(i);
-            }
-        };     
+        for (int i=1; (i*i)<=n; i++) {
+            System.out.println(i*i);
+        };            
         System.out.println("Voici les n premiers entiers strictement positifs impairs:");
         for (int i=1; i<=n; i++) {
             if (i%2==1) {

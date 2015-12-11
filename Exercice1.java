@@ -6,26 +6,33 @@ class Exercice1 {
         System.out.println("Veuillez saisir une naturel n:");
         int n = sc.nextInt();
         
-        System.out.println("Voici les n premiers entiers strictement positifs:")
+        System.out.println("Voici les n premiers entiers strictement positifs:");
         for(int i=1; i<=n; i++) {
             System.out.println(i)
-        }
-        System.out.println("Voici les n premiers entiers strictement positifs en ordre decroissant:")
+        };
+        System.out.println("Voici les n premiers entiers strictement positifs en ordre decroissant:");
         for(int i=n; i>=1; i--) {
             System.out.println(i)
-        }
-        System.out.println("Voici les n premiers carrés parfaits:")
+        };
+        System.out.println("Voici les n premiers carrés parfaits:");
         int cp = (int) Math.sqrt(n);
         for (int i=1; i<=n; i++) {
-            if(cp*cp == n) {
-                System.out.println(n)
-            }
-        }        
-        System.out.println("Voici les n premiers entiers strictement positifs impairs:")
-        
-        
-        System.out.println("Voici les entiers strictement positifs impairs qui sont inférieurs ou égaux à n:")
-        
+            if(cp*cp == i) {
+                System.out.println(i)
+            };
+        };     
+        System.out.println("Voici les n premiers entiers strictement positifs impairs:");
+        for (int i=1; i<=n; i++) {
+            if (i%2==1) {
+                System.out.println(i);
+            };
+        }
+        System.out.println("Voici les entiers strictement positifs impairs qui sont inférieurs ou égaux à n:");
+        for (int i=1; i<=n; i++) {
+            if (i%2==0) {
+                System.out.println(i);
+            };
+        };
         
     }
 }
